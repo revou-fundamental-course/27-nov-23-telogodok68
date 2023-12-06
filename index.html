@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulatir Matematik</title>
+</head>
+
+<body style="background-image: url('https://nilaimutlak.id/wp-content/uploads/2020/03/segitiga.jpg'), url('https://nilaimutlak.id/wp-content/uploads/2020/03/segitiga.jpg'); background-size: contain, contain ; background-repeat: no-repeat, no-repeat; background-position: left center, right center;">
+
+    <div class="calculator-container">
+        <h2>Welcome to Katik</h2>
+        <h3>Web Sederhana penghitung Luas dan Keliling Segitiga by Wahyu Pratama</h3>
+
+        <img src="https://www.zenius.net/blog/wp-content/uploads/2020/01/shutterstock_1281744310.jpg" alt="Keliling Formula" class="formula-image">
+
+        <nav>
+            <a href="#" onclick="toggleInputs('luas')">Luas</a>
+            <a href="#" onclick="toggleInputs('keliling')">Keliling</a>
+        </nav>
+
+        <div id="luas-input" class="input-section">
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas">
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi">
+        </div>
+
+        <div id="keliling-input" class="input-section">
+            <label for="sisi1">Sisi 1:</label>
+            <input type="number" id="sisi1">
+            <label for="sisi2">Sisi 2:</label>
+            <input type="number" id="sisi2">
+            <label for="sisi3">Sisi 3:</label>
+            <input type="number" id="sisi3">
+        </div>
+
+        <button onclick="calculate()">Hitung</button>
+
+        <div id="result" class="result"></div>
+
+        <!-- Tambahkan tombol reset hasil -->
+        <button onclick="resetResult()" class="reset-button">Reset Hasil</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
